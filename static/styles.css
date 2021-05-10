@@ -8,7 +8,11 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  background: #e8e8e8;
 
+}
+h2{
+  font-size: 1rem;
 }
 
 header,
@@ -63,7 +67,7 @@ footer {
 
 .video-container{
 width:80%;
-background: #e8e8e8;
+
 justify-content:center;
 
 }
@@ -82,7 +86,7 @@ justify-content:center;
 }
 
 .footer-container{
-  position: fixed;
+  padding-top: 10px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -92,10 +96,56 @@ justify-content:center;
   color: white;
 
 }
+.nav-conatiner-mobile{
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
-
+ 
   .form{
     display: none;
   }
+  .video-container {
+    width: 100%;
+  }
+
+  .navbar-center {
+    position: unset;
+    display: inline-table;
+}
+
+.pl-5, .px-5 {
+ padding-left: 1rem!important;
+}
+.pr-5, .px-5 {
+  padding-right: 1rem!important;
+}
+
+.main-container {
+  height: auto;
+  display: flex;
+    flex-direction: column;
+}
+.nav-conatiner-mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: #F05454;
+  width: 80%;
+  place-self: center;
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+.nav-conatiner-mobile> button{
+
+margin: 10px 0 10px 0;
+width: 80%;
+place-self: center;
+
+
+}
+iframe{
+
+  height: 300px;
+}
+
 }
