@@ -142,5 +142,8 @@ iframe{
 
   height: 300px;
 }
+.navbar-nav{
+  display: none;
+}
 
 }
